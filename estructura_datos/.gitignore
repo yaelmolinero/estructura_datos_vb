@@ -1,0 +1,72 @@
+# =========================
+# Visual Studio / VB.NET
+# =========================
+
+# Archivos de compilación
+bin/
+obj/
+
+# Archivos de depuración
+*.pdb
+*.user
+*.suo
+*.cache
+*.dbmdl
+
+# Configuración de usuario
+*.userosscache
+*.userprefs
+
+# Archivos de paquetes NuGet
+*.nupkg
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Configuración de build
+[Bb]uild/
+[Ll]ogs/
+
+# Archivos generados por Visual Studio
+*.vspscc
+*.vssscc
+.vs/
+
+# Archivos de publicación
+publish/
+*.pubxml
+*.publishproj
+
+# Configuración de IIS / Web
+*.vspscc
+*.sln.docstates
+
+# Archivos temporales
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*.sln.ide
+
+# Archivos de Test
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Archivos de rendimiento
+BenchmarkDotNet.Artifacts/
+
+# Archivos de base de datos locales
+*.mdf
+*.ldf
+*.ndf
+
+# Archivos de Office (innecesarios en repos)
+~$*
+
+# Archivos de sistema
+[Dd]esktop.ini
+[Tt]humbs.db
+*.DS_Store
