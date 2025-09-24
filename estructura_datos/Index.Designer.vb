@@ -24,6 +24,8 @@ Partial Class Index
     Private Sub InitializeComponent()
         TabControl1 = New TabControl()
         TabPage1 = New TabPage()
+        fibbonacciBtn = New Button()
+        factorialBtn = New Button()
         insertarOrdenadoBtn = New Button()
         primeroBtn = New Button()
         TabPage2 = New TabPage()
@@ -49,6 +51,8 @@ Partial Class Index
         ' TabPage1
         ' 
         TabPage1.BackColor = Color.Transparent
+        TabPage1.Controls.Add(fibbonacciBtn)
+        TabPage1.Controls.Add(factorialBtn)
         TabPage1.Controls.Add(insertarOrdenadoBtn)
         TabPage1.Controls.Add(primeroBtn)
         TabPage1.ForeColor = Color.Black
@@ -58,6 +62,34 @@ Partial Class Index
         TabPage1.Size = New Size(351, 419)
         TabPage1.TabIndex = 0
         TabPage1.Text = "ev1"
+        ' 
+        ' fibbonacciBtn
+        ' 
+        fibbonacciBtn.FlatAppearance.BorderColor = Color.White
+        fibbonacciBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
+        fibbonacciBtn.ForeColor = Color.Black
+        fibbonacciBtn.Location = New Point(0, 159)
+        fibbonacciBtn.Name = "fibbonacciBtn"
+        fibbonacciBtn.RightToLeft = RightToLeft.No
+        fibbonacciBtn.Size = New Size(351, 46)
+        fibbonacciBtn.TabIndex = 3
+        fibbonacciBtn.Text = "Fibbonacci"
+        fibbonacciBtn.TextAlign = ContentAlignment.MiddleLeft
+        fibbonacciBtn.UseVisualStyleBackColor = True
+        ' 
+        ' factorialBtn
+        ' 
+        factorialBtn.FlatAppearance.BorderColor = Color.White
+        factorialBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
+        factorialBtn.ForeColor = Color.Black
+        factorialBtn.Location = New Point(0, 107)
+        factorialBtn.Name = "factorialBtn"
+        factorialBtn.RightToLeft = RightToLeft.No
+        factorialBtn.Size = New Size(351, 46)
+        factorialBtn.TabIndex = 2
+        factorialBtn.Text = "Factorial"
+        factorialBtn.TextAlign = ContentAlignment.MiddleLeft
+        factorialBtn.UseVisualStyleBackColor = True
         ' 
         ' insertarOrdenadoBtn
         ' 
@@ -133,4 +165,6 @@ Partial Class Index
     Friend WithEvents TabPage3 As TabPage
     Friend WithEvents primeroBtn As Button
     Friend WithEvents insertarOrdenadoBtn As Button
+    Friend WithEvents fibbonacciBtn As Button
+    Friend WithEvents factorialBtn As Button
 End Class

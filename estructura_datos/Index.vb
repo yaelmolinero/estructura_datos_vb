@@ -8,4 +8,14 @@
         Dim f As New InsertarOrdenado()
         f.Show()
     End Sub
+
+    Private Sub factorialBtn_Click(sender As Object, e As EventArgs) Handles factorialBtn.Click
+        Dim f As New Factorial()
+        f.Show()
+    End Sub
+
+    Private Sub fibbonacciBtn_Click(sender As Object, e As EventArgs) Handles fibbonacciBtn.Click
+        Dim f As New Fibbonacci()
+        f.Show()
+    End Sub
 End Class
