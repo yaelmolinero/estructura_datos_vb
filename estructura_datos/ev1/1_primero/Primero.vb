@@ -46,7 +46,7 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub remove_Click(sender As Object, e As EventArgs) Handles remove.Click
+    Private Sub removeBtn_Click(sender As Object, e As EventArgs) Handles removeBtn.Click
         X = InputBox("Escribe el valor que quieres eliminar")
         I = 1
 

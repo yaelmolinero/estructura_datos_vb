@@ -25,7 +25,7 @@ Partial Class Form1
         addBtn = New Button()
         search = New Button()
         update = New Button()
-        remove = New Button()
+        removeBtn = New Button()
         val2 = New TextBox()
         val3 = New TextBox()
         val4 = New TextBox()
@@ -65,14 +65,14 @@ Partial Class Form1
         update.Text = "Modifica"
         update.UseVisualStyleBackColor = True
         ' 
-        ' remove
+        ' removeBtn
         ' 
-        remove.Location = New Point(552, 225)
-        remove.Name = "remove"
-        remove.Size = New Size(94, 29)
-        remove.TabIndex = 3
-        remove.Text = "Eliminar"
-        remove.UseVisualStyleBackColor = True
+        removeBtn.Location = New Point(552, 225)
+        removeBtn.Name = "removeBtn"
+        removeBtn.Size = New Size(94, 29)
+        removeBtn.TabIndex = 3
+        removeBtn.Text = "Eliminar"
+        removeBtn.UseVisualStyleBackColor = True
         ' 
         ' val2
         ' 
@@ -159,7 +159,7 @@ Partial Class Form1
         Controls.Add(val4)
         Controls.Add(val3)
         Controls.Add(val2)
-        Controls.Add(remove)
+        Controls.Add(removeBtn)
         Controls.Add(update)
         Controls.Add(search)
         Controls.Add(addBtn)
@@ -172,7 +172,7 @@ Partial Class Form1
     Friend WithEvents addBtn As Button
     Friend WithEvents search As Button
     Friend WithEvents update As Button
-    Friend WithEvents remove As Button
+    Friend WithEvents removeBtn As Button
     Friend WithEvents val2 As TextBox
     Friend WithEvents val3 As TextBox
     Friend WithEvents val4 As TextBox
