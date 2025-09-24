@@ -36,7 +36,6 @@
             Return
         End If
 
-        'N += 1
         POS *= -1
 
         For I = N To POS + 1 Step -1
@@ -45,7 +44,6 @@
         Next
 
         N += 1
-
 
         V(POS) = Y
         Msg(POS).Text = Y
@@ -63,6 +61,7 @@
 
         If (POS < 0) Then
             MessageBox.Show("El elemento no existe.")
+            Return
         End If
 
         N -= 1
@@ -70,7 +69,8 @@
         For I = POS To N
             V(I) = V(I + 1)
             Msg(I).Text = V(I + 1)
-            Msg(N).Text = ""
         Next
+
+        Msg(N).Text = ""
     End Sub
 End Class
