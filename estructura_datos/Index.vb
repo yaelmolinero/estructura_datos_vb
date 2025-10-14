@@ -18,4 +18,19 @@
         Dim f As New Fibbonacci()
         f.Show()
     End Sub
+
+    Private Sub conv_postfija_btn_Click(sender As Object, e As EventArgs) Handles conv_postfija_btn.Click
+        Dim f As New ConvPostfija()
+        f.Show()
+    End Sub
+
+    Private Sub pilaBtn_Click(sender As Object, e As EventArgs) Handles pilaBtn.Click
+        Dim f As New Pila()
+        f.Show()
+    End Sub
+
+    Private Sub ConvPrefija_Click(sender As Object, e As EventArgs) Handles ConvPrefija.Click
+        Dim f As New ConvPrefija()
+        f.Show()
+    End Sub
 End Class

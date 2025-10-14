@@ -29,9 +29,13 @@ Partial Class Index
         insertarOrdenadoBtn = New Button()
         primeroBtn = New Button()
         TabPage2 = New TabPage()
+        pilaBtn = New Button()
+        conv_postfija_btn = New Button()
         TabPage3 = New TabPage()
+        ConvPrefija = New Button()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
+        TabPage2.SuspendLayout()
         SuspendLayout()
         ' 
         ' TabControl1
@@ -122,6 +126,9 @@ Partial Class Index
         ' TabPage2
         ' 
         TabPage2.BackColor = Color.Transparent
+        TabPage2.Controls.Add(ConvPrefija)
+        TabPage2.Controls.Add(pilaBtn)
+        TabPage2.Controls.Add(conv_postfija_btn)
         TabPage2.ForeColor = Color.Black
         TabPage2.Location = New Point(4, 34)
         TabPage2.Name = "TabPage2"
@@ -129,6 +136,34 @@ Partial Class Index
         TabPage2.Size = New Size(351, 419)
         TabPage2.TabIndex = 1
         TabPage2.Text = "ev2"
+        ' 
+        ' pilaBtn
+        ' 
+        pilaBtn.FlatAppearance.BorderColor = Color.White
+        pilaBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
+        pilaBtn.ForeColor = Color.Black
+        pilaBtn.Location = New Point(0, 3)
+        pilaBtn.Name = "pilaBtn"
+        pilaBtn.RightToLeft = RightToLeft.No
+        pilaBtn.Size = New Size(351, 46)
+        pilaBtn.TabIndex = 2
+        pilaBtn.Text = "Pila"
+        pilaBtn.TextAlign = ContentAlignment.MiddleLeft
+        pilaBtn.UseVisualStyleBackColor = True
+        ' 
+        ' conv_postfija_btn
+        ' 
+        conv_postfija_btn.FlatAppearance.BorderColor = Color.White
+        conv_postfija_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
+        conv_postfija_btn.ForeColor = Color.Black
+        conv_postfija_btn.Location = New Point(0, 55)
+        conv_postfija_btn.Name = "conv_postfija_btn"
+        conv_postfija_btn.RightToLeft = RightToLeft.No
+        conv_postfija_btn.Size = New Size(351, 46)
+        conv_postfija_btn.TabIndex = 1
+        conv_postfija_btn.Text = "Conv Post Fija"
+        conv_postfija_btn.TextAlign = ContentAlignment.MiddleLeft
+        conv_postfija_btn.UseVisualStyleBackColor = True
         ' 
         ' TabPage3
         ' 
@@ -140,6 +175,20 @@ Partial Class Index
         TabPage3.Size = New Size(351, 419)
         TabPage3.TabIndex = 2
         TabPage3.Text = "ev3"
+        ' 
+        ' ConvPrefija
+        ' 
+        ConvPrefija.FlatAppearance.BorderColor = Color.White
+        ConvPrefija.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
+        ConvPrefija.ForeColor = Color.Black
+        ConvPrefija.Location = New Point(0, 107)
+        ConvPrefija.Name = "ConvPrefija"
+        ConvPrefija.RightToLeft = RightToLeft.No
+        ConvPrefija.Size = New Size(351, 46)
+        ConvPrefija.TabIndex = 3
+        ConvPrefija.Text = "Conv Pre Fija"
+        ConvPrefija.TextAlign = ContentAlignment.MiddleLeft
+        ConvPrefija.UseVisualStyleBackColor = True
         ' 
         ' Index
         ' 
@@ -156,6 +205,7 @@ Partial Class Index
         Text = "Index"
         TabControl1.ResumeLayout(False)
         TabPage1.ResumeLayout(False)
+        TabPage2.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
 
@@ -167,4 +217,7 @@ Partial Class Index
     Friend WithEvents insertarOrdenadoBtn As Button
     Friend WithEvents fibbonacciBtn As Button
     Friend WithEvents factorialBtn As Button
+    Friend WithEvents conv_postfija_btn As Button
+    Friend WithEvents pilaBtn As Button
+    Friend WithEvents ConvPrefija As Button
 End Class
