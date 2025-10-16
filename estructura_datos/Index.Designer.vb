@@ -29,10 +29,12 @@ Partial Class Index
         insertarOrdenadoBtn = New Button()
         primeroBtn = New Button()
         TabPage2 = New TabPage()
+        ColaCircular = New Button()
+        ColaSimple = New Button()
+        ConvPrefija = New Button()
         pilaBtn = New Button()
         conv_postfija_btn = New Button()
         TabPage3 = New TabPage()
-        ConvPrefija = New Button()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         TabPage2.SuspendLayout()
@@ -40,8 +42,8 @@ Partial Class Index
         ' 
         ' TabControl1
         ' 
-        TabControl1.Controls.Add(TabPage1)
         TabControl1.Controls.Add(TabPage2)
+        TabControl1.Controls.Add(TabPage1)
         TabControl1.Controls.Add(TabPage3)
         TabControl1.Cursor = Cursors.Hand
         TabControl1.Font = New Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
@@ -126,6 +128,8 @@ Partial Class Index
         ' TabPage2
         ' 
         TabPage2.BackColor = Color.Transparent
+        TabPage2.Controls.Add(ColaCircular)
+        TabPage2.Controls.Add(ColaSimple)
         TabPage2.Controls.Add(ConvPrefija)
         TabPage2.Controls.Add(pilaBtn)
         TabPage2.Controls.Add(conv_postfija_btn)
@@ -136,6 +140,48 @@ Partial Class Index
         TabPage2.Size = New Size(351, 419)
         TabPage2.TabIndex = 1
         TabPage2.Text = "ev2"
+        ' 
+        ' ColaCircular
+        ' 
+        ColaCircular.FlatAppearance.BorderColor = Color.White
+        ColaCircular.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
+        ColaCircular.ForeColor = Color.Black
+        ColaCircular.Location = New Point(0, 211)
+        ColaCircular.Name = "ColaCircular"
+        ColaCircular.RightToLeft = RightToLeft.No
+        ColaCircular.Size = New Size(351, 46)
+        ColaCircular.TabIndex = 5
+        ColaCircular.Text = "Cola Circular"
+        ColaCircular.TextAlign = ContentAlignment.MiddleLeft
+        ColaCircular.UseVisualStyleBackColor = True
+        ' 
+        ' ColaSimple
+        ' 
+        ColaSimple.FlatAppearance.BorderColor = Color.White
+        ColaSimple.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
+        ColaSimple.ForeColor = Color.Black
+        ColaSimple.Location = New Point(0, 159)
+        ColaSimple.Name = "ColaSimple"
+        ColaSimple.RightToLeft = RightToLeft.No
+        ColaSimple.Size = New Size(351, 46)
+        ColaSimple.TabIndex = 4
+        ColaSimple.Text = "Cola Simple"
+        ColaSimple.TextAlign = ContentAlignment.MiddleLeft
+        ColaSimple.UseVisualStyleBackColor = True
+        ' 
+        ' ConvPrefija
+        ' 
+        ConvPrefija.FlatAppearance.BorderColor = Color.White
+        ConvPrefija.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
+        ConvPrefija.ForeColor = Color.Black
+        ConvPrefija.Location = New Point(0, 107)
+        ConvPrefija.Name = "ConvPrefija"
+        ConvPrefija.RightToLeft = RightToLeft.No
+        ConvPrefija.Size = New Size(351, 46)
+        ConvPrefija.TabIndex = 3
+        ConvPrefija.Text = "Conv Pre Fija"
+        ConvPrefija.TextAlign = ContentAlignment.MiddleLeft
+        ConvPrefija.UseVisualStyleBackColor = True
         ' 
         ' pilaBtn
         ' 
@@ -176,20 +222,6 @@ Partial Class Index
         TabPage3.TabIndex = 2
         TabPage3.Text = "ev3"
         ' 
-        ' ConvPrefija
-        ' 
-        ConvPrefija.FlatAppearance.BorderColor = Color.White
-        ConvPrefija.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
-        ConvPrefija.ForeColor = Color.Black
-        ConvPrefija.Location = New Point(0, 107)
-        ConvPrefija.Name = "ConvPrefija"
-        ConvPrefija.RightToLeft = RightToLeft.No
-        ConvPrefija.Size = New Size(351, 46)
-        ConvPrefija.TabIndex = 3
-        ConvPrefija.Text = "Conv Pre Fija"
-        ConvPrefija.TextAlign = ContentAlignment.MiddleLeft
-        ConvPrefija.UseVisualStyleBackColor = True
-        ' 
         ' Index
         ' 
         AutoScaleDimensions = New SizeF(11F, 28F)
@@ -220,4 +252,6 @@ Partial Class Index
     Friend WithEvents conv_postfija_btn As Button
     Friend WithEvents pilaBtn As Button
     Friend WithEvents ConvPrefija As Button
+    Friend WithEvents ColaSimple As Button
+    Friend WithEvents ColaCircular As Button
 End Class

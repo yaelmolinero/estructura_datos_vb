@@ -33,4 +33,14 @@
         Dim f As New ConvPrefija()
         f.Show()
     End Sub
+
+    Private Sub ColaSimple_Click(sender As Object, e As EventArgs) Handles ColaSimple.Click
+        Dim f As New ColaSimple()
+        f.Show()
+    End Sub
+
+    Private Sub ColaCircular_Click(sender As Object, e As EventArgs) Handles ColaCircular.Click
+        Dim f As New ColaCircular()
+        f.Show()
+    End Sub
 End Class
