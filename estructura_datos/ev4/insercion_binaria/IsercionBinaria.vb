@@ -34,7 +34,8 @@
         Next
     End Sub
 
-    Private Sub add_value(val As String)
+    Private Sub add_value()
+        Dim val = input.Text
         If val = "" Then Return
 
         If POS = N Then
@@ -51,20 +52,16 @@
         Catch ex As Exception
             MsgBox("Solo se aceptan numeros")
         End Try
+
+        input.Text = ""
     End Sub
 
     Private Sub input_KeyUp(sender As Object, e As KeyEventArgs) Handles input.KeyUp
-        If e.KeyValue <> Keys.Enter Then Return
-
-        Dim val = input.Text
-        add_value(val)
-        input.Text = ""
+        If e.KeyValue = Keys.Enter Then add_value()
     End Sub
 
     Private Sub submit_Click(sender As Object, e As EventArgs) Handles submit.Click
-        Dim val = input.Text
-        add_value(val)
-        input.Text = ""
+        add_value()
     End Sub
 
     Private Sub clear_Click(sender As Object, e As EventArgs) Handles clear.Click
