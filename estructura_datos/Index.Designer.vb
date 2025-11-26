@@ -35,15 +35,21 @@ Partial Class Index
         pilaBtn = New Button()
         conv_postfija_btn = New Button()
         TabPage3 = New TabPage()
+        ArbolBinario = New Button()
+        TabPage4 = New TabPage()
+        InsercionBinaria = New Button()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         TabPage2.SuspendLayout()
+        TabPage3.SuspendLayout()
+        TabPage4.SuspendLayout()
         SuspendLayout()
         ' 
         ' TabControl1
         ' 
-        TabControl1.Controls.Add(TabPage2)
+        TabControl1.Controls.Add(TabPage4)
         TabControl1.Controls.Add(TabPage1)
+        TabControl1.Controls.Add(TabPage2)
         TabControl1.Controls.Add(TabPage3)
         TabControl1.Cursor = Cursors.Hand
         TabControl1.Font = New Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
@@ -214,6 +220,7 @@ Partial Class Index
         ' TabPage3
         ' 
         TabPage3.BackColor = Color.Transparent
+        TabPage3.Controls.Add(ArbolBinario)
         TabPage3.ForeColor = Color.Black
         TabPage3.Location = New Point(4, 34)
         TabPage3.Name = "TabPage3"
@@ -222,11 +229,49 @@ Partial Class Index
         TabPage3.TabIndex = 2
         TabPage3.Text = "ev3"
         ' 
+        ' ArbolBinario
+        ' 
+        ArbolBinario.FlatAppearance.BorderColor = Color.White
+        ArbolBinario.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
+        ArbolBinario.ForeColor = Color.Black
+        ArbolBinario.Location = New Point(0, 6)
+        ArbolBinario.Name = "ArbolBinario"
+        ArbolBinario.RightToLeft = RightToLeft.No
+        ArbolBinario.Size = New Size(351, 46)
+        ArbolBinario.TabIndex = 6
+        ArbolBinario.Text = "Arbol Binario"
+        ArbolBinario.TextAlign = ContentAlignment.MiddleLeft
+        ArbolBinario.UseVisualStyleBackColor = True
+        ' 
+        ' TabPage4
+        ' 
+        TabPage4.Controls.Add(InsercionBinaria)
+        TabPage4.Location = New Point(4, 34)
+        TabPage4.Name = "TabPage4"
+        TabPage4.Size = New Size(351, 419)
+        TabPage4.TabIndex = 3
+        TabPage4.Text = "ev4"
+        TabPage4.UseVisualStyleBackColor = True
+        ' 
+        ' InsercionBinaria
+        ' 
+        InsercionBinaria.FlatAppearance.BorderColor = Color.White
+        InsercionBinaria.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
+        InsercionBinaria.ForeColor = Color.Black
+        InsercionBinaria.Location = New Point(0, 3)
+        InsercionBinaria.Name = "InsercionBinaria"
+        InsercionBinaria.RightToLeft = RightToLeft.No
+        InsercionBinaria.Size = New Size(351, 46)
+        InsercionBinaria.TabIndex = 6
+        InsercionBinaria.Text = "Inserción Binaria"
+        InsercionBinaria.TextAlign = ContentAlignment.MiddleLeft
+        InsercionBinaria.UseVisualStyleBackColor = True
+        ' 
         ' Index
         ' 
         AutoScaleDimensions = New SizeF(11F, 28F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.OldLace
+        BackColor = SystemColors.ControlLight
         ClientSize = New Size(381, 481)
         Controls.Add(TabControl1)
         Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
@@ -238,6 +283,8 @@ Partial Class Index
         TabControl1.ResumeLayout(False)
         TabPage1.ResumeLayout(False)
         TabPage2.ResumeLayout(False)
+        TabPage3.ResumeLayout(False)
+        TabPage4.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
 
@@ -254,4 +301,7 @@ Partial Class Index
     Friend WithEvents ConvPrefija As Button
     Friend WithEvents ColaSimple As Button
     Friend WithEvents ColaCircular As Button
+    Friend WithEvents ArbolBinario As Button
+    Friend WithEvents TabPage4 As TabPage
+    Friend WithEvents InsercionBinaria As Button
 End Class

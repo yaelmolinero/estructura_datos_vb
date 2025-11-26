@@ -43,4 +43,14 @@
         Dim f As New ColaCircular()
         f.Show()
     End Sub
+
+    Private Sub ArbolBinario_Click(sender As Object, e As EventArgs) Handles ArbolBinario.Click
+        Dim f As New ArbolBinario()
+        f.Show()
+    End Sub
+
+    Private Sub InsercionBinaria_Click(sender As Object, e As EventArgs) Handles InsercionBinaria.Click
+        Dim f As New IsercionBinaria()
+        f.Show()
+    End Sub
 End Class
